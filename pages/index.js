@@ -120,20 +120,23 @@ export default function Page() {
       description="A vocabulary trainer made with Flask, Javascript and NGINX."
       status="stopped"
       link="https://theoldbraintrain.privacyy.ch/"
-      visibleLinks={["https://theoldbraintrain.privacyy.ch"]}
+      visibleLinks={["https://theoldbraintrain.privacyy.ch", "https://github.com/arch-user-france1/python-brainTrain"]}
       ></Project>
 
 
       <Project
       projectname="MCAltChecker (stale)"
-      description="AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct on a small dataset of 100 players."
+      description="AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct on a small dataset of 100 players. Taken down due to security vulnerabilities."
       status="collaborating"
+      visibleLinks={["https://altchecker.obvtiger.ch/"]}
       ></Project>
 
       <Project
       projectname="CLI pythonVocabularyTrainer (old)"
       description="My first attempt of writing a vocabulary trainer. Only worked in the Linux command-line-interface, but with colors to improve experience."
       status="stopped"
+      link="https://github.com/arch-user-france1/brainTrain"
+      visibleLinks={["https://github.com/arch-user-france1/brainTrain"]}
       ></Project>
 
       <Project
