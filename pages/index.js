@@ -114,6 +114,11 @@ export default function Page() {
       description="Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (WIP) and then displayed on a NextJS website."
       status="in development"
       ></Project>
+      
+      <Project
+      projectname="ML Dog Detection"
+      description="Checks an image for my dog. Might eventually build a website 'findMyDog'."
+      ></Project>
 
       <Project 
       projectname="brainTrain (old)" 
