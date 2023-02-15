@@ -91,7 +91,7 @@ export default function Page() {
 
       <Project
       projectname="brainTrain" 
-      description="A vocabulary trainer made with NextJS, Docker and NGINX. I've been working concentrated on it for about 3 months." 
+      description="A vocabulary trainer made with NextJS, Docker, Prisma DB, Mysql and NGINX. I've been working concentrated on it for about 3 months." 
       status="running"
       link="https://braintrain.privacyy.ch/"
       visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
@@ -99,7 +99,7 @@ export default function Page() {
 
       <Project
       projectname="Portfolio"
-      description="Here I introduce myself. Scroll down to see more projects."
+      description="With NextJS and Vercel."
       link=""
       ></Project>
       
