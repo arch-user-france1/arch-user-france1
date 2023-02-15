@@ -88,7 +88,6 @@ export default function Page() {
 
       <CodeBlock command="./projects" />
       <div className={styles.elevation}>
-
       <Project
       projectname="brainTrain" 
       description="A vocabulary trainer made with NextJS, Docker, Prisma DB, Mysql and NGINX. I've been working concentrated on it for about 3 months." 
