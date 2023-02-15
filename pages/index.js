@@ -94,7 +94,8 @@ export default function Page() {
       projectname="brainTrain" 
       description="A vocabulary trainer made with NextJS, Docker and NGINX." 
       status="running"
-      link="https://privacyy.ch/"></Project>
+      link="https://privacyy.ch/"
+      ></Project>
       
       <Project
       projectname="Minecraft Server Scanner"
