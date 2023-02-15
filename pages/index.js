@@ -25,10 +25,8 @@ export default function Page() {
     } else if (status === "collaborating") {
       statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusCollaborating}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
     }
-
-    
     else {
-      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusNone}`}></div></div>)
+      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusNone}`}></div>  <span className={styles.statusHint}>unknown</span></div>)
     }
 
     return (<div className={styles.project}>
