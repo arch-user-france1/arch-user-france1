@@ -49,7 +49,7 @@ export default function Page() {
   function CodeBlock({ command }) {
     return (
       <div className='codeBackground'>
-        <span style={{color: "#00ff95"}}>{"➜  ~"}&nbsp;</span><span>{command}</span><div className='pointer'></div>
+        <span style={{color: "#00ff95"}}>➜&nbsp;</span><span style={{color: "#ff53ff"}}>~&nbsp;</span><span>{command}</span><div className='pointer'></div>
       </div>
     )
   }
@@ -86,15 +86,17 @@ export default function Page() {
 
       <CodeBlock command="./projects" />
       <div className={styles.elevation}>
+
+      <Project
+      projectname="brainTrain" 
+      description="A vocabulary trainer made with NextJS, Docker and NGINX. I've been working concentrated on it for about 3 months." 
+      status="running"
+      link="https://braintrain.privacyy.ch/"
+      ></Project>
+
       <Project
       projectname="Portfolio"
       description="Here I introduce myself. Scroll down to see more projects."
-      ></Project>
-      <Project
-      projectname="brainTrain" 
-      description="A vocabulary trainer made with NextJS, Docker and NGINX." 
-      status="running"
-      link="https://braintrain.privacyy.ch/"
       ></Project>
       
       <Project
@@ -120,7 +122,7 @@ export default function Page() {
 
       <Project
       projectname="MCAltChecker (stale)"
-      description="AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest, however the AI guessed 75% correct on a small dataset of 100 players."
+      description="AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct on a small dataset of 100 players."
       status="collaborating"
       ></Project>
 
