@@ -13,6 +13,7 @@ html, body {
   color: #817f7f
 }
 
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 .codeBackground {
   background-color: #101010;
   min-width: 20rem;
@@ -23,7 +24,7 @@ html, body {
   border-radius: 1.3rem;
   justify-content: center;
 
-  font-family: monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 1.3rem;
 
   display: flex;
