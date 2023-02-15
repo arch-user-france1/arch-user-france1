@@ -102,6 +102,7 @@ export default function Page() {
       <Project
       projectname="Portfolio"
       description="Here I introduce myself. Scroll down to see more projects."
+      link=""
       ></Project>
       
       <Project
