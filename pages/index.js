@@ -114,6 +114,12 @@ export default function Page() {
       description="Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (WIP) and then displayed on a NextJS website."
       status="in development"
       ></Project>
+
+      <Project
+      projectname="GoReverseProxy"
+      description="A reverse proxy written in Go that respects simple Cache-Control max-age headers."
+      status="in development"
+      ></Project>
       
       <Project
       projectname="ML Dog Detection"
