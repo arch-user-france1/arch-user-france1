@@ -94,7 +94,7 @@ export default function Page() {
       projectname="brainTrain" 
       description="A vocabulary trainer made with NextJS, Docker and NGINX." 
       status="running"
-      link="https://privacyy.ch/"
+      link="https://braintrain.privacyy.ch/"
       ></Project>
       
       <Project
@@ -114,7 +114,7 @@ export default function Page() {
       projectname="brainTrain (old)" 
       description="A vocabulary trainer made with Flask, Javascript and NGINX."
       status="stopped"
-      link="https://braintrain.privacyy.ch/"
+      link="https://theoldbraintrain.privacyy.ch/"
       ></Project>
 
 
