@@ -13,7 +13,7 @@ export default function Page() {
   }
 
 
-  function Project({ projectname, description, link, status }) {
+  function Project({ projectname, description, link, status, visibleLinks }) {
 
     let statusicon
     if (status === "in development") {
@@ -42,6 +42,10 @@ export default function Page() {
       </h2>
 
       <span>{description}</span>
+
+      {visibleLinks && (<div className={styles.projectLinks}>
+        {visibleLinks.map((x) => (<Link target="_blank" rel="noopener" className={styles.projectLink} href={x}>{x}</Link>))}
+      </div>)}
     </div>)
   }
 
@@ -92,6 +96,7 @@ export default function Page() {
       description="A vocabulary trainer made with NextJS, Docker and NGINX. I've been working concentrated on it for about 3 months." 
       status="running"
       link="https://braintrain.privacyy.ch/"
+      visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
       ></Project>
 
       <Project
@@ -117,6 +122,7 @@ export default function Page() {
       description="A vocabulary trainer made with Flask, Javascript and NGINX."
       status="stopped"
       link="https://theoldbraintrain.privacyy.ch/"
+      visibleLinks={["https://theoldbraintrain.privacyy.ch"]}
       ></Project>
 
 

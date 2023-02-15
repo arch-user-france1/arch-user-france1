@@ -75,3 +75,12 @@
     align-items: center;
     gap: 8px;
 }
+
+.projectLinks {
+    display: grid;
+    justify-content: center;
+}
+.projectLink {
+    color: #009390;
+    text-decoration: underline;
+}
