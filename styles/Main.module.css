@@ -1,0 +1,16 @@
+#header {
+    padding: 1.5%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #1a1a1a;
+}
+
+#location {
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 4rem;
+}
