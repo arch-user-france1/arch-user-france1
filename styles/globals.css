@@ -23,8 +23,9 @@ html, body {
 
 .codeBackground {
   background-color: #101010;
-  min-width: 10rem;
+  min-width: 20rem;
   min-height: 4rem;
+  margin: auto;
   margin-bottom: 2rem;
 
   border-radius: 1.3rem;

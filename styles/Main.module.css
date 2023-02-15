@@ -14,3 +14,16 @@
     text-align: center;
     margin-bottom: 4rem;
 }
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    margin-bottom: 3rem;
+}
+
+.elevation {
+    padding: 1rem;
+    background-color: #1a1a1a;
+}
