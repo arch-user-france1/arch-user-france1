@@ -27,3 +27,51 @@
     padding: 1rem;
     background-color: #1a1a1a;
 }
+
+
+.statusContainer {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.status {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+
+.statusHint {
+    font-size: 0.6rem;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(152, 142, 142);
+    opacity: 0.5;
+}
+
+.statusRunning {
+    background-color:rgba(144, 247, 146, 0.805);
+}
+.statusDevelopment {
+    background-color:rgba(89, 111, 255, 0.805);
+}
+.statusCollaborating {
+    background-color:rgba(248, 139, 244, 0.805);
+}
+.statusStopped {
+    background-color:rgba(253, 100, 100, 0.805); 
+}
+.statusNone {
+    border: 1px solid rgba(255, 255, 255, 0.657);
+    width: 5px;
+    height: 5px;
+}
+
+
+.projectTitle {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}

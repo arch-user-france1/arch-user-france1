@@ -13,15 +13,32 @@ export default function Page() {
   }
 
 
-  function Project({ projectname, description, link }) {
-    if (!link) {
-      link = ""
+  function Project({ projectname, description, link, status }) {
+
+    let statusicon
+    if (status === "in development") {
+      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusDevelopment}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
+    } else if (status === "stopped") {
+      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusStopped}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
+    } else if (status === "running") {
+      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusRunning}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
+    } else if (status === "collaborating") {
+      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusCollaborating}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
     }
+
+    
+    else {
+      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusNone}`}></div></div>)
+    }
+
     return (<div className={styles.project}>
-      <h2>
-        <Link target="_blank" rel="noopener" href={link}>
+      <h2 className={styles.projectTitle}>
+        {link ? (<Link target="_blank" rel="noopener" href={link}>
         {projectname}
-        </Link>
+        </Link>) : (<a>{projectname}</a>)}
+        <div>
+        {statusicon}
+        </div>
       </h2>
 
       <span>{description}</span>
@@ -69,36 +86,53 @@ export default function Page() {
 
       <CodeBlock command="./projects" />
       <div className={styles.elevation}>
-      <Project 
+      <Project
+      projectname="Portfolio"
+      description="Here I introduce myself. Scroll down to see more projects."
+      ></Project>
+      <Project
       projectname="brainTrain" 
       description="A vocabulary trainer made with NextJS, Docker and NGINX." 
+      status="running"
       link="https://privacyy.ch/"></Project>
       
       <Project
       projectname="Minecraft Server Scanner"
       description="Scans every IP for the port 25565 and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest python multiprocessing and multithreading."
       link="https://github.com/obvtiger"
+      status="collaborating"
+      ></Project>
+
+      <Project
+      projectname="Wildlife Camera"
+      description="Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (WIP) and then displayed on a NextJS website."
+      status="in development"
       ></Project>
 
       <Project 
       projectname="brainTrain (old)" 
       description="A vocabulary trainer made with Flask, Javascript and NGINX."
-      link="https://braintrain.privacyy.ch/"></Project>
+      status="stopped"
+      link="https://braintrain.privacyy.ch/"
+      ></Project>
 
 
       <Project
       projectname="MCAltChecker (stale)"
       description="AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest, however the AI guessed 75% correct on a small dataset of 100 players."
+      status="collaborating"
       ></Project>
 
       <Project
-      projectname="CLI PythonVocabularyTrainer (old)"
+      projectname="CLI pythonVocabularyTrainer (old)"
       description="My first attempt of writing a vocabulary trainer. Only worked in the Linux command-line-interface, but with colors to improve experience."
+      status="stopped"
       ></Project>
 
       <Project
       projectname="Nextcloud"
       description="administration of a public self-hosted Nextcloud (discontinued)"
+      status="stopped"
       ></Project>
       </div>
     </>
