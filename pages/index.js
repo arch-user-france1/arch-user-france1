@@ -95,18 +95,13 @@ export default function Page() {
       link="https://braintrain.privacyy.ch/"
       visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
       ></Project>
-
-      <Project
-      projectname="Portfolio"
-      description="With NextJS and Vercel."
-      link=""
-      ></Project>
       
       <Project
       projectname="Minecraft Server Scanner"
       description="Scans every IP for the port 25565 and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest python multiprocessing and multithreading."
-      link="https://github.com/obvtiger"
+      link="https://mcmotdsearch.obvtiger.ch"
       status="collaborating"
+      visibleLinks={["https://mcmotdsearch.obvtiger.ch", "https://github.com/obvtiger"]}
       ></Project>
 
       <Project
