@@ -1,0 +1,16 @@
+<svg fill="none" viewBox="0 0 800 400" width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				button {
+                    background-color: black;
+                    border: 3px solid #37ecff;
+                    color: #ff61ff;
+                }
+			</style>
+			<div class="container">
+				<button>check out my work</button>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
