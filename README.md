@@ -4,5 +4,5 @@ Check out <a href="https://privacyy.ch">my portfolio</a> or my <a href="https://
 
 
 <a href="https://privacyy.ch">
-<img src="checkout_portfolio.svg?nocache" width="400" height="200" alt="Check out my work">
+<img src="checkout_portfolio.svg?nocache" width="413" height="141" alt="Check out my work">
 </a>
