@@ -1,9 +1,10 @@
 import styles from '../styles/Main.module.css'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Page() {
 
-  function Head() {
+  function Header() {
     let introtext = "$ Portfolio"
     return (<header style={{marginBottom: "7rem"}}>
       <div id={styles.header}>
@@ -17,7 +18,7 @@ export default function Page() {
 
     let statusicon
     if (status === "in development") {
-      statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusDevelopment}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
+      statusicon = (<div className={styles.statusContainer}><div></div><div className={`${styles.status} ${styles.statusDevelopment}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
     } else if (status === "stopped") {
       statusicon = (<div className={styles.statusContainer}><div className={`${styles.status} ${styles.statusStopped}`}></div>  <span className={styles.statusHint}>{status}</span></div>)
     } else if (status === "running") {
@@ -48,16 +49,16 @@ export default function Page() {
   }
 
 
-  function CodeBlock({ command }) {
+  function CodeBlock({ command, nomargin }) {
     return (
-      <div className='codeBackground'>
+      <div className={`codeBackground ${nomargin && "codeNoMargin"}`}>
         <span style={{color: "#00ff95"}}>➜&nbsp;</span><span style={{color: "#ff53ff"}}>~&nbsp;</span><span>{command}</span><div className='pointer'></div>
       </div>
     )
   }
 
   function LinkGithub() {
-    return (<a href="https://github.com/arch-user-france1" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>)
+    return (<a href="https://github.com/arch-user-france1" target="_blank" rel="noopener" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>)
   }
   function LinkTelegram() {
     return (<a href="https://t.me/Caramello5839" target="_blank" rel="noopener" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></a>)
@@ -75,18 +76,20 @@ export default function Page() {
 
   return (
     <>
-      <Head></Head>
+    <Head>
+      <title>Portfolio - privacyy.ch</title>
+    </Head>
+      <Header></Header>
 
 
       <div>
       <h1 className="center">privacyy.ch</h1>
       <h3 className="center" style={{marginBottom: "3rem"}}>→ programming as the greatest hobby</h3>
       </div>
-      <CodeBlock command="cat social.txt" />
+      <CodeBlock command="./social" />
       <Socials />
-      <span></span>
 
-      <CodeBlock command="./projects" />
+      <CodeBlock command="./projects" nomargin />
       <div className={styles.elevation}>
       <Project
       projectname="brainTrain" 
