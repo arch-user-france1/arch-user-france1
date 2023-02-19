@@ -6,6 +6,9 @@
                     background-color: black;
                     border: 3px solid #37ecff;
                     color: #ff61ff;
+					font-size: 2rem;
+					width: 4rem;
+					height: 2rem;
                 }
 			</style>
 			<div class="container">
