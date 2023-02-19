@@ -78,6 +78,7 @@ export default function Page() {
     <>
     <Head>
       <title>Portfolio - privacyy.ch</title>
+      <meta name="description" content="Portfolio of a programmer that likes Javascript and builds websites with NextJS. Have a look at my projects."/>
     </Head>
       <Header></Header>
 
