@@ -11,10 +11,23 @@
 					border-radius: .5rem;
                 }
 				.container {
-					background: linear-gradient(45deg, #ff4e43, #ff8100, #ff00ff);
+					background: linear-gradient(45deg, #ff8100, #ff00ff, #ff8100);
 					padding: 3px;
 					border-radius: .5rem;
 					width: max-content;
+					animation: glow 8s infinite;
+					background-size: 400%;
+				}
+				@keyframes glow {
+				0% {
+					background-position: 0 0;
+				}
+				50% {
+					background-position: 200% 200%;
+				}
+				100% {
+					background-position: 0 0;
+				}
 				}
 			</style>
 			<div class="container">
