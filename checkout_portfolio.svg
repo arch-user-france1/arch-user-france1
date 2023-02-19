@@ -14,6 +14,7 @@
 					background: linear-gradient(45deg, #ff4e43, #ff8100, #ff00ff);
 					padding: 3px;
 					border-radius: .5rem;
+					width: max-content;
 				}
 			</style>
 			<div class="container">
