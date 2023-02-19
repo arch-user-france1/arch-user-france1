@@ -1,13 +1,14 @@
-<svg fill="none" viewBox="0 0 800 400" width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 200 100" width="200" height="100" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
 				button {
                     background-color: black;
-                    border: 3px solid #37ecff;
+                    border: 6px solid #37ecff;
                     color: #ff61ff;
-					font-size: 6rem;
-					padding: 8rem;
+					font-size: 5rem;
+					padding: 2rem;
+					border-radius: 2rem;
                 }
 			</style>
 			<div class="container">
