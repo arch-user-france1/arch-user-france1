@@ -1,6 +1,6 @@
-<svg fill="none" viewBox="0 0 300 150" width="413" height="141" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 200 45" width="413" height="141" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
+		<div xmlns="http://www.w3.org/1999/xhtml" style="width: max-content;">
 			<style>
 				button {
                     background-color: black;

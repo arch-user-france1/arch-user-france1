@@ -14,7 +14,7 @@ export default function Page() {
   }
 
 
-  function Project({ projectname, description, link, status, visibleLinks }) {
+  function Project({ projectname, description, link, status, visibleLinks, responsibleHostingMsg }) {
 
     let statusicon
     if (status === "in development") {
@@ -42,6 +42,7 @@ export default function Page() {
 
       <span>{description}</span>
 
+      {responsibleHostingMsg && (<div><br></br><span className='warning'>The following links are not hosted by me and I am not responsible for their availability.</span></div>)}
       {visibleLinks && (<div className={styles.projectLinks}>
         {visibleLinks.map((x) => (<Link target="_blank" rel="noopener" className={styles.projectLink} href={x}>{x}</Link>))}
       </div>)}
@@ -106,6 +107,7 @@ export default function Page() {
       link="https://mcmotdsearch.obvtiger.ch"
       status="collaborating"
       visibleLinks={["https://mcmotdsearch.obvtiger.ch", "https://obvtiger.ch"]}
+      responsibleHostingMsg={true}
       ></Project>
 
       <Project
