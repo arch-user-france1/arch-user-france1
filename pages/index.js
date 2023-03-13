@@ -99,7 +99,7 @@ export default function Page() {
       <h3 className="center" style={{marginBottom: "3rem"}}>→ programming as the greatest hobby</h3>
       </div>
       <CodeBlock command="contact" />
-      <h4 className='center'>My GitHub and Telegram profile.</h4>
+      <h4 className='center'>My GitHub and Telegram profiles.</h4>
       <Socials />
 
       <CodeBlock command="projects" nomargin />
