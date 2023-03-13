@@ -98,10 +98,11 @@ export default function Page() {
       <h1 className="center heading">privacyy.ch</h1>
       <h3 className="center" style={{marginBottom: "3rem"}}>→ programming as the greatest hobby</h3>
       </div>
-      <CodeBlock command="./social" />
+      <CodeBlock command="contact" />
+      <h4 className='center'>My GitHub and Telegram profile.</h4>
       <Socials />
 
-      <CodeBlock command="./projects" nomargin />
+      <CodeBlock command="projects" nomargin />
       <div className={styles.elevation}>
       <Project
       projectname="brainTrain" 
