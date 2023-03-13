@@ -85,7 +85,7 @@ export default function Page() {
 
 
       <div>
-      <h1 className="center">privacyy.ch</h1>
+      <h1 className="center heading">privacyy.ch</h1>
       <h3 className="center" style={{marginBottom: "3rem"}}>→ programming as the greatest hobby</h3>
       </div>
       <CodeBlock command="./social" />

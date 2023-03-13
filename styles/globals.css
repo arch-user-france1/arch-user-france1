@@ -76,3 +76,12 @@ a {
 .warning {
   color: #bf8628;
 }
+
+.heading {
+  background: linear-gradient(90deg, #c49250 30%, #c1906f, #cb784e 70%);
+  background-clip: text;
+  color: transparent;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
