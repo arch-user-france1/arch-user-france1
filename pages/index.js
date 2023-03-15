@@ -128,6 +128,13 @@ export default function Page() {
       ></Project>
 
       <Project
+      projectname="Portfolio"
+      description="The source code can be found on my GitHub Repository."
+      status="running"
+      visibleLinks={["https://github.com/arch-user-france1/arch-user-france1"]}
+      ></Project>
+
+      <Project
       projectname="GoReverseProxy"
       description="A reverse proxy written in Go that respects simple Cache-Control max-age headers. Using Redis."
       ></Project>
