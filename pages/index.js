@@ -100,7 +100,7 @@ export default function Page() {
       <div>
       <h1 className="center heading">privacyy.ch</h1>
       <h3 className="center" style={{marginBottom: "3rem"}}>
-      → <LinearGradientText gr={["#00ef2a", "#afec8a"]}>programming</LinearGradientText> as the greatest hobby
+      → <LinearGradientText gr={["#00ef2a", "#afec8a"]}>programming</LinearGradientText> as the <LinearGradientText gr={["#00e3ed", "#e76af1"]}>greatest hobby</LinearGradientText>
       </h3>
       </div>
       <CodeBlock command="contact" />
