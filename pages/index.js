@@ -104,7 +104,7 @@ export default function Page() {
       </h3>
       </div>
       <CodeBlock command="contact" />
-      <h4 className='center'>My GitHub and Telegram profiles.</h4>
+      <h4 className='center'>My <LinearGradientText gr={["#526af3", "#38a7f1"]}>GitHub</LinearGradientText> and <LinearGradientText gr={["#fe52b8", "#e589f0"]}>Telegram</LinearGradientText> profiles.</h4>
       <Socials />
 
       <CodeBlock command="projects" nomargin />
