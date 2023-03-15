@@ -130,7 +130,6 @@ export default function Page() {
       <Project
       projectname="GoReverseProxy"
       description="A reverse proxy written in Go that respects simple Cache-Control max-age headers. Using Redis."
-      status="in development"
       ></Project>
       
       <Project
