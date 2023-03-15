@@ -84,6 +84,9 @@ export default function Page() {
     )
   }
 
+  function LinearGradientText({gr, children}) {
+    return (<span className='lgText' style={{background: `linear-gradient(120deg, ${gr[0]},${gr[1]})`}}>{children}</span>)
+  }
 
   return (
     <>
@@ -96,7 +99,9 @@ export default function Page() {
 
       <div>
       <h1 className="center heading">privacyy.ch</h1>
-      <h3 className="center" style={{marginBottom: "3rem"}}>→ programming as the greatest hobby</h3>
+      <h3 className="center" style={{marginBottom: "3rem"}}>
+      → <LinearGradientText gr={["#00ef2a", "#afec8a"]}>programming</LinearGradientText> as the greatest hobby
+      </h3>
       </div>
       <CodeBlock command="contact" />
       <h4 className='center'>My GitHub and Telegram profiles.</h4>
