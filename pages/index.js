@@ -174,7 +174,7 @@ export default function Page() {
 
       <Project
       projectname="Nextcloud"
-      description="administration of a public self-hosted Nextcloud (discontinued)"
+      description="administration of a public self-hosted Nextcloud"
       status="stopped"
       ></Project>
       </div>
