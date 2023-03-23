@@ -146,7 +146,7 @@ export default function Page() {
       
       <Project
       projectname="ML Dog Detection"
-      description="Checks an image for my dog. Might eventually build a website 'findMyDog'."
+      description="Searches for my dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client."
       ></Project>
 
       <Project 
