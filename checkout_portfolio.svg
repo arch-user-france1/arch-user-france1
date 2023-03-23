@@ -1,24 +1,26 @@
 <svg fill="none" viewBox="0 0 200 45" width="413" height="141" xmlns="http://www.w3.org/2000/svg">
-	<foreignObject width="100%" height="100%">
+	<foreignObject width="400%" height="400%">
 		<div xmlns="http://www.w3.org/1999/xhtml" style="width: max-content;">
 			<style>
-				button {
-                    background-color: black;
-                    color: #00d7dc;
-					padding: 1rem;
-					border: none;
-					outline: none;
-					border-radius: .5rem;
-                }
-				.container {
-					background: linear-gradient(45deg, #ff8100, #ff00ff, #ff8100);
-					padding: 3px;
-					border-radius: .5rem;
-					width: max-content;
-					animation: glow 8s infinite;
-					background-size: 400%;
-				}
-				@keyframes glow {
+			button {
+                    		background-color: black;
+                    		color: #00d7dc;
+				padding: 16px;
+				border: none;
+				outline: none;
+				border-radius: .5rem;
+			}
+			.container {
+				background: linear-gradient(45deg, #ff8100, #ff00ff, #ff8100);
+				padding: 3px;
+				border-radius: 8px;
+				width: max-content;
+				animation: glow 8s infinite;
+				background-size: 400%;
+				display: flex;
+				justify-content: center;
+			}
+			@keyframes glow {
 				0% {
 					background-position: 0 0;
 				}
@@ -28,10 +30,10 @@
 				100% {
 					background-position: 0 0;
 				}
-				}
+			}
 			</style>
 			<div class="container">
-				<button>check out my work</button>
+				<button>check out my portfolio</button>
 			</div>
 		</div>
 	</foreignObject>
