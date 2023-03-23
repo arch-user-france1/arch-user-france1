@@ -179,7 +179,7 @@ export default function Page() {
       projectname="MCAltChecker (stale)"
       status="collaborating"
       >
-        <span>AI written in <GrWarm>Tensorflow</GrWarm> (Python) to check if a Minecraft Account is <GrWarm>cheating</GrWarm> or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct on a small dataset of 100 players.</span>
+        <span>AI written in <GrWarm>Tensorflow</GrWarm> (Python) to check if a Minecraft Account is <GrWarm>cheating</GrWarm> or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct of a small dataset of 100 players.</span>
       </Project>
 
       <Project
@@ -188,14 +188,14 @@ export default function Page() {
       link="https://github.com/arch-user-france1/brainTrain"
       visibleLinks={["https://github.com/arch-user-france1/brainTrain"]}
       >
-        <span>My first attempt of writing a vocabulary trainer. Only worked on the Linux command-line-interface, but with colors to improve the experience.</span>
+        <span>My <GrWarm>first attempt of writing a vocabulary trainer</GrWarm>. Only worked on the Linux <GrMagenta>Command-Line-Interface</GrMagenta>, but with <GrLight>colors to improve the experience</GrLight>.</span>
       </Project>
 
       <Project
       projectname="Nextcloud"
       status="stopped"
       >
-        <span>administration of a public self-hosted Nextcloud</span>
+        <span>administration of a public <GrCool>self-hosted Nextcloud</GrCool></span>
       </Project>
       </div>
     </>
