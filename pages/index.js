@@ -14,7 +14,8 @@ export default function Page() {
   }
 
 
-  function Project({ projectname, description, link, status, visibleLinks, responsibleHostingMsg }) {
+  function Project({ projectname, children, link, status, visibleLinks, responsibleHostingMsg }) {
+    let description = children
 
     let statusicon
     if (status === "in development") {
@@ -40,7 +41,7 @@ export default function Page() {
         </div>
       </h2>
 
-      <span>{description}</span>
+      <div>{description}</div>
 
       {responsibleHostingMsg && (<div><br></br><span className='warning'>The following links are not hosted by me and I am not responsible for their availability.</span></div>)}
       {visibleLinks && (<div className={styles.projectLinks}>
@@ -92,7 +93,7 @@ export default function Page() {
     <>
     <Head>
       <title>Portfolio - privacyy.ch</title>
-      <meta name="description" content="Portfolio of a programmer that likes Javascript and builds websites with NextJS. Have a look at my projects."/>
+      <meta name="description" content="Portfolio of a programmer that likes Javascript and builds websites with NextJS."/>
     </Head>
       <Header></Header>
 
@@ -111,72 +112,82 @@ export default function Page() {
       <div className={styles.elevation}>
       <Project
       projectname="brainTrain" 
-      description="A vocabulary trainer made with NextJS, Docker, Prisma DB, Mysql and NGINX. I've been working concentrated on it since December 2022." 
       status="running"
       link="https://braintrain.privacyy.ch/"
       visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
-      ></Project>
+      >
+        <span>A vocabulary trainer made with NextJS, Docker, Prisma DB, Mysql and NGINX. I've been working concentrated on it since December 2022.</span>
+      </Project>
       
       <Project
       projectname="Minecraft Server Scanner"
-      description="Scans every IP for the port 25565 and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest python multiprocessing and multithreading."
       link="https://mcmotdsearch.obvtiger.ch"
       status="collaborating"
       visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
-      responsibleHostingMsg={true}
-      ></Project>
+      responsibleHostingMsg
+      >
+        <span>Scans every IP for the port 25565 and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest python multiprocessing and multithreading. He build the frontend.</span>
+      </Project>
 
       <Project
       projectname="Wildlife Camera"
-      description="Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (Python) and then displayed on a NextJS website."
       status="in development"
-      ></Project>
+      >
+        <span>Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (Python) and then displayed on a NextJS website.</span>
+      </Project>
 
       <Project
       projectname="Portfolio"
-      description="The source code can be found on my GitHub Repository."
       status="running"
       visibleLinks={["https://github.com/arch-user-france1/arch-user-france1"]}
-      ></Project>
+      >
+        <span>The source code can be found on my GitHub Repository.</span>
+      </Project>
 
       <Project
       projectname="GoReverseProxy"
-      description="A reverse proxy written in Go that respects simple Cache-Control max-age headers. Using Redis."
-      ></Project>
+      >
+        <span>A reverse proxy written in Go that respects simple Cache-Control max-age headers. Using Redis.</span>
+      </Project>
       
       <Project
       projectname="ML Dog Detection"
-      description="Searches for my dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client."
-      ></Project>
+      >
+        <span>Searches for the house's dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
+      </Project>
 
       <Project 
       projectname="brainTrain (old)" 
-      description="A vocabulary trainer made with Flask, Javascript and NGINX."
       status="stopped"
       link="https://theoldbraintrain.privacyy.ch/"
       visibleLinks={["https://theoldbraintrain.privacyy.ch", "https://github.com/arch-user-france1/python-brainTrain"]}
-      ></Project>
+      >
+        <span>A vocabulary trainer made with Flask, Javascript and NGINX.</span>
+      </Project>
 
 
       <Project
       projectname="MCAltChecker (stale)"
-      description="AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct on a small dataset of 100 players."
       status="collaborating"
-      ></Project>
+      >
+        <span>AI written in Tensorflow (Python) to check if a Minecraft Account is cheating or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct on a small dataset of 100 players.</span>
+      </Project>
 
       <Project
       projectname="CLI pythonVocabularyTrainer (old)"
-      description="My first attempt of writing a vocabulary trainer. Only worked in the Linux command-line-interface, but with colors to improve experience."
       status="stopped"
       link="https://github.com/arch-user-france1/brainTrain"
       visibleLinks={["https://github.com/arch-user-france1/brainTrain"]}
-      ></Project>
+      >
+        <span>My first attempt of writing a vocabulary trainer. Only worked in the Linux command-line-interface, but with colors to improve experience.</span>
+      </Project>
 
       <Project
       projectname="Nextcloud"
-      description="administration of a public self-hosted Nextcloud"
       status="stopped"
-      ></Project>
+      >
+        <span>administration of a public self-hosted Nextcloud</span>
+      </Project>
       </div>
     </>
   )
