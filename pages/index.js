@@ -122,7 +122,7 @@ export default function Page() {
       description="Scans every IP for the port 25565 and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest python multiprocessing and multithreading."
       link="https://mcmotdsearch.obvtiger.ch"
       status="collaborating"
-      visibleLinks={["https://mcmotdsearch.obvtiger.ch", "https://obvtiger.ch"]}
+      visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
       responsibleHostingMsg={true}
       ></Project>
 
