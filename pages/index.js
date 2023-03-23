@@ -128,7 +128,7 @@ export default function Page() {
 
       <Project
       projectname="Wildlife Camera"
-      description="Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (WIP) and then displayed on a NextJS website."
+      description="Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured images are sent to my server (Python) and then displayed on a NextJS website."
       status="in development"
       ></Project>
 
