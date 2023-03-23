@@ -135,7 +135,7 @@ export default function Page() {
       visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
       responsibleHostingMsg
       >
-        <span>Scans every IP for the <GrLight>port 25565</GrLight> and checks if a <GrGreen>Minecraft server</GrGreen> is running there. Parses the <GrMagenta>Motd</GrMagenta> and stores it in a <GrMagenta>JSON file</GrMagenta>. Made for my friend, with finest python multiprocessing and multithreading. He built the frontend.</span>
+        <span>Scans every IP for the <GrLight>port 25565</GrLight>, and checks if a <GrGreen>Minecraft server</GrGreen> is running there. Parses the <GrMagenta>Motd</GrMagenta> and stores it in a <GrMagenta>JSON file</GrMagenta>. Made for my friend, with finest python multiprocessing and multithreading. He built the frontend.</span>
       </Project>
 
       <Project
@@ -162,7 +162,7 @@ export default function Page() {
       <Project
       projectname="ML Dog Detection"
       >
-        <span>Searches for the house's <GrLight>dog</GrLight> in images. Might <GrMagenta>eventually build a website</GrMagenta> 'findMyDog' where my model is run on images uploaded by the client.</span>
+        <span>Searches for our house's <GrLight>dog</GrLight> in images. Might <GrMagenta>eventually build a website</GrMagenta> 'findMyDog' where my model is run on images uploaded by the client.</span>
       </Project>
 
       <Project 
