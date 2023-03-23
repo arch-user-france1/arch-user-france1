@@ -188,7 +188,7 @@ export default function Page() {
       link="https://github.com/arch-user-france1/brainTrain"
       visibleLinks={["https://github.com/arch-user-france1/brainTrain"]}
       >
-        <span>My first attempt of writing a vocabulary trainer. Only worked in the Linux command-line-interface, but with colors to improve experience.</span>
+        <span>My first attempt of writing a vocabulary trainer. Only worked on the Linux command-line-interface, but with colors to improve the experience.</span>
       </Project>
 
       <Project
