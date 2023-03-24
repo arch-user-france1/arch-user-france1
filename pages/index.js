@@ -125,7 +125,7 @@ export default function Page() {
       link="https://braintrain.privacyy.ch/"
       visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
       >
-        <span>A vocabulary trainer made with <GrCool>NextJS</GrCool>, <GrMagenta>Prisma DB</GrMagenta>, <GrWarm>Mysql</GrWarm>, <GrGreen>NGINX</GrGreen>, and <GrLight>Docker</GrLight>, . I've been working concentrated on it since December 2022.</span>
+        <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma DB, Mysql, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
       </Project>
       
       <Project
@@ -135,14 +135,14 @@ export default function Page() {
       visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
       responsibleHostingMsg
       >
-        <span>Scans every IP for the <GrLight>port 25565</GrLight>, and checks if a <GrGreen>Minecraft server</GrGreen> is running there. Parses the <GrMagenta>Motd</GrMagenta> and stores it in a <GrMagenta>JSON file</GrMagenta>. Made for my friend, with finest python multiprocessing and multithreading. He built the frontend.</span>
+        <span>Pings every IP's port 25565, and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest <GrMagenta>python multiprocessing and multithreading</GrMagenta>. He built the frontend.</span>
       </Project>
 
       <Project
       projectname="Wildlife Camera"
       status="in development"
       >
-        <span>Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured <GrGreen>images are sent to my server over a <GrCool>WLAN</GrCool> network</GrGreen> (using Python) and then displayed on a NextJS website.</span>
+        <span>Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured <GrGreen>images are sent to my server over a WLAN network</GrGreen> (using Python) and then displayed on a NextJS website.</span>
       </Project>
 
       <Project
@@ -150,19 +150,19 @@ export default function Page() {
       status="running"
       visibleLinks={["https://github.com/arch-user-france1/arch-user-france1"]}
       >
-        <span>The <GrLight>source code</GrLight> is in my GitHub repository.</span>
+        <span>The source codeis in my GitHub repository.</span>
       </Project>
 
       <Project
       projectname="GoReverseProxy"
       >
-        <span>A reverse proxy written in Go respecting simple <GrWarm>Cache-Control max-age headers</GrWarm>. Using Redis.</span>
+        <span>A reverse proxy written in Go respecting simple Cache-Control max-age headers. Using Redis.</span>
       </Project>
       
       <Project
       projectname="ML Dog Detection"
       >
-        <span>Searches for our house's <GrLight>dog</GrLight> in images. Might <GrMagenta>eventually build a website</GrMagenta> 'findMyDog' where my model is run on images uploaded by the client.</span>
+        <span>Searches for our house's dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
       </Project>
 
       <Project 
@@ -171,7 +171,7 @@ export default function Page() {
       link="https://theoldbraintrain.privacyy.ch/"
       visibleLinks={["https://theoldbraintrain.privacyy.ch", "https://github.com/arch-user-france1/python-brainTrain"]}
       >
-        <span>A <GrWarm>vocabulary trainer</GrWarm> made with <GrCool>Flask</GrCool>, <GrMagenta>Javascript</GrMagenta>, and <GrGreen>NGINX</GrGreen>.</span>
+        <span>A vocabulary trainer made with Flask, Javascript, and NGINX.</span>
       </Project>
 
 
@@ -179,7 +179,7 @@ export default function Page() {
       projectname="MCAltChecker (stale)"
       status="collaborating"
       >
-        <span>AI written in <GrWarm>Tensorflow</GrWarm> (Python) to check if a Minecraft Account is <GrWarm>cheating</GrWarm> or not. The frontend developer lost interest (for the moment), however the AI guessed 75% correct of a small dataset of 100 players.</span>
+        <span>AI written in <GrWarm>Tensorflow</GrWarm> (Python) to check if a Minecraft Player is cheating or not <GrLight>using server's APIs to inspect their game stats</GrLight>. The frontend developer lost interest (for the moment), however the AI guessed 75% correct of a small dataset of 100 players.</span>
       </Project>
 
       <Project
