@@ -127,6 +127,10 @@ export default function Page() {
       >
         <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma DB, Mysql, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
       </Project>
+
+      <Project projectname="Discardium" status="collaborating">
+        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet.</span>
+      </Project>
       
       <Project
       projectname="Minecraft Server Scanner"
@@ -152,15 +156,9 @@ export default function Page() {
       >
         <span>The source codeis in my GitHub repository.</span>
       </Project>
-
-      <Project
-      projectname="GoReverseProxy"
-      >
-        <span>A reverse proxy written in Go respecting simple Cache-Control max-age headers. Using Redis.</span>
-      </Project>
       
       <Project
-      projectname="ML Dog Detection"
+      projectname="AI Dog Detection"
       >
         <span>Searches for our house's dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
       </Project>
