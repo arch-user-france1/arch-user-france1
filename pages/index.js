@@ -154,7 +154,7 @@ export default function Page() {
       status="running"
       visibleLinks={["https://github.com/arch-user-france1/arch-user-france1"]}
       >
-        <span>The source codeis in my GitHub repository.</span>
+        <span>The source code is in my GitHub repository.</span>
       </Project>
       
       <Project
