@@ -193,9 +193,11 @@ export default function Page() {
 
       <Project
       projectname="Nextcloud"
-      status="stopped"
+      status="running"
+      link="https://nextcloud.privacyy.ch"
+      visibleLinks={["https://nextcloud.privacyy.ch"]}
       >
-        <span>administration of a public <GrCool>self-hosted Nextcloud</GrCool></span>
+        <span>administration of a public <GrCool>self-hosted Nextcloud</GrCool>, data stored on ZFS</span>
       </Project>
       </div>
     </>
