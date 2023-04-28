@@ -131,22 +131,14 @@ export default function Page() {
       <Project projectname="Discardium" status="collaborating">
         <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet.</span>
       </Project>
-      
-      <Project
-      projectname="Minecraft Server Scanner"
-      link="https://mcmotdsearch.obvtiger.ch"
-      status="collaborating"
-      visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
-      responsibleHostingMsg
-      >
-        <span>Pings every IP's port 25565, and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest <GrMagenta>python multiprocessing and multithreading</GrMagenta>. He built the frontend.</span>
-      </Project>
 
       <Project
       projectname="Wildlife Camera"
-      status="in development"
+      status="running"
+      link="https://wildtierkamera.privacyy.ch"
+      visibleLinks={["https://wildtierkamera.privacyy.ch"]}
       >
-        <span>Made with a Raspberry Pi, a night-vision camera and even a motion sensor. Captured <GrGreen>images are sent to my server over a WLAN network</GrGreen> (using Python) and then displayed on a NextJS website.</span>
+        <span>Made with a Raspberry Pi, a night-vision camera and a motion sensor. Captured <GrGreen>images are sent to my server over a WLAN network</GrGreen> (using Python) and then displayed on a NextJS website.</span>
       </Project>
 
       <Project
@@ -161,6 +153,16 @@ export default function Page() {
       projectname="AI Dog Detection"
       >
         <span>Searches for our house's dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
+      </Project>
+
+      <Project
+      projectname="Minecraft Server Scanner"
+      link="https://mcmotdsearch.obvtiger.ch"
+      status="collaborating"
+      visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
+      responsibleHostingMsg
+      >
+        <span>Pings every IP's port 25565, and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest <GrMagenta>python multiprocessing and multithreading</GrMagenta>. He built the frontend.</span>
       </Project>
 
       <Project 
