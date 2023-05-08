@@ -62,16 +62,16 @@ export default function Page() {
   function LinkGithub() {
     return (
     <div style={{display: "grid", justifyContent: "center"}}>
-      <a style={{margin: "auto"}} href="https://github.com/arch-user-france1" target="_blank" rel="noopener" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-      <span>GitHub</span>
+      <a style={{margin: "auto"}} href="https://github.com/arch-user-france1" target="_blank" rel="noopener" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+      <span><LinearGradientText gr={["#526af3", "#38a7f1"]}>GitHub</LinearGradientText></span>
     </div>
     )
   }
   function LinkTelegram() {
     return (
     <div style={{display: "grid", justifyContent: "center"}}>
-      <a style={{margin: "auto"}} href="https://t.me/Caramello5839" target="_blank" rel="noopener" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></a>
-      <span>Telegram</span>
+      <a style={{margin: "auto"}} href="https://t.me/Caramello5839" target="_blank" rel="noopener" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></a>
+      <span><LinearGradientText gr={["#fe52b8", "#e589f0"]}>Telegram</LinearGradientText></span>
     </div>
     )
   }
@@ -114,7 +114,7 @@ export default function Page() {
       </h3>
       </div>
       <CodeBlock command="contact" />
-      <h4 className='center'>My <LinearGradientText gr={["#526af3", "#38a7f1"]}>GitHub</LinearGradientText> and <LinearGradientText gr={["#fe52b8", "#e589f0"]}>Telegram</LinearGradientText> profiles.</h4>
+      <h4 className='center'>My GitHub and Telegram accounts.</h4>
       <Socials />
 
       <CodeBlock command="projects" nomargin />

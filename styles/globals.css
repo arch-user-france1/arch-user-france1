@@ -19,7 +19,7 @@ html, body {
   min-width: 20rem;
   min-height: 4rem;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 
   border-radius: 1.3rem;
   justify-content: center;
