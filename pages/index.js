@@ -125,7 +125,7 @@ export default function Page() {
       link="https://braintrain.privacyy.ch/"
       visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
       >
-        <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma DB, Mysql, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
+        <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma ORM, MySQL, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
       </Project>
 
       <Project projectname="Discardium" status="collaborating">
@@ -152,7 +152,7 @@ export default function Page() {
       <Project
       projectname="AI Dog Detection"
       >
-        <span>Searches for our house's dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
+        <span>Searches for our house's <GrMagenta>dog in images</GrMagenta>. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
       </Project>
 
       <Project 
@@ -161,7 +161,7 @@ export default function Page() {
       link="https://theoldbraintrain.privacyy.ch/"
       visibleLinks={["https://theoldbraintrain.privacyy.ch", "https://github.com/arch-user-france1/python-brainTrain"]}
       >
-        <span>A vocabulary trainer made with Flask, Javascript, and NGINX.</span>
+        <span>A vocabulary trainer made with <GrWarm>Flask, Javascript, and NGINX</GrWarm>.</span>
       </Project>
 
 
@@ -187,11 +187,9 @@ export default function Page() {
       link="https://nextcloud.privacyy.ch"
       visibleLinks={["https://nextcloud.privacyy.ch"]}
       >
-        <span>administration of a public <GrCool>self-hosted Nextcloud</GrCool>, data stored on ZFS</span>
+        <span>administration of a public <GrCool>self-hosted Nextcloud</GrCool>, data stored on <GrCool>ZFS (Zettabyte-File-System)</GrCool></span>
       </Project>
       </div>
     </>
   )
-
-
 }
