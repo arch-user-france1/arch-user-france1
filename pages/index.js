@@ -155,16 +155,6 @@ export default function Page() {
         <span>Searches for our house's dog in images. Might eventually build a website 'findMyDog' where my model is run on images uploaded by the client.</span>
       </Project>
 
-      <Project
-      projectname="Minecraft Server Scanner"
-      link="https://mcmotdsearch.obvtiger.ch"
-      status="collaborating"
-      visibleLinks={["https://mcmotdsearch.obvtiger.ch"]}
-      responsibleHostingMsg
-      >
-        <span>Pings every IP's port 25565, and checks if a Minecraft server is running there. Parses the Motd and stores it in a JSON file. Made for my friend, with finest <GrMagenta>python multiprocessing and multithreading</GrMagenta>. He built the frontend.</span>
-      </Project>
-
       <Project 
       projectname="brainTrain (old)" 
       status="stopped"
