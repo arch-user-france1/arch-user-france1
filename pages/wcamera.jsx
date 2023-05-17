@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Header } from "./index";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Page() {
     return (
@@ -23,6 +24,11 @@ export default function Page() {
                     <p>
                         Images are sent entirely using Python's socket module. It turned out to be an interesting experiment to implement that on a lower level.
                         When the images arrive on the server, an API route adds the image to a MySQL Database using Prisma.
+                    </p>
+
+                    <p>
+                        I am excited to see it do its work soon when I will hand it over to an acquainted. 
+                        There's always the matter of the weather, and it would be pleasing if the components live for an acceptable time. Actually, I'm fairly confident our arrangements are sufficient and the SD Card might be the first thing to die. I've got a backup :)
                     </p>
 
                     <Image width={1280/2} height={960/2} alt="Wildlife Camera front view" src="/WildlifeCamera.jpg"></Image>
