@@ -12,7 +12,7 @@ export default function Page() {
                     <h1>Wildlife Camera</h1>
 
                     <p>I've programmed a wildlife camera and built a case with my family.<br></br>
-                        The <Link href="https://wildtierkamera.privacyy.ch" alt="link to front end">front end</Link> is, as always, built on NextJS and React. The backend, however, is using Python. 
+                        The <Link href="https://wildtierkamera.privacyy.ch" alt="link to front end">front end</Link> is, as always, built on NextJS and React. The back end, however, is using Python. 
                         On the inside of the case I have fixed a Raspberry Pi running Python code that checks for movement using the motion sensor (gray, round shape on the bottom). 
                         Images are captured quickly after the motion sensor is triggered and, once there's a working connection to my server over a WLAN Hotspot from a phone, uploaded to my server. There are two LEDs that indicate whether the connection is established and images are being uploaded. In case of a server error, one of the LEDs blinks.
                     </p>

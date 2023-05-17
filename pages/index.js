@@ -151,7 +151,7 @@ export default function Page() {
       status="running"
       link="https://wildtierkamera.privacyy.ch"
       onSiteLinks={[
-        "/wildtierkamera",
+        "/wcamera",
       ]}
       visibleLinks={[
         "https://wildtierkamera.privacyy.ch",
