@@ -116,7 +116,7 @@ export default function Page() {
     <>
     <Head>
       <title>Portfolio - privacyy.ch</title>
-      <meta name="description" content="Portfolio of a programmer that likes Javascript and builds websites with NextJS."/>
+      <meta name="description" content="Portfolio of a programmer who likes Javascript and builds websites with NextJS."/>
     </Head>
       <Header></Header>
 
