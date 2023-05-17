@@ -1,20 +1,32 @@
 import styles from '../styles/Main.module.css'
 import Link from 'next/link'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { basePath } from '@/next.config'
+
+export function Header() {
+  const introtext = "$ Portfolio"
+  return (
+  <header style={{marginBottom: "7rem"}}>
+    <div id={styles.header}>
+      <Link href="/">
+        <span id={styles.location}>{introtext}</span>
+      </Link>
+    </div>
+  </header>
+  )
+}
 
 export default function Page() {
+  const router = useRouter();
+  const [basePath, setBasePath] = useState("https://privacyy.ch/")
 
-  function Header() {
-    let introtext = "$ Portfolio"
-    return (<header style={{marginBottom: "7rem"}}>
-      <div id={styles.header}>
-        <span id={styles.location}>{introtext}</span>
-      </div>
-    </header>)
-  }
+  useEffect(() => {
+    setBasePath(`${location.origin}`)
+  }, [])
 
-
-  function Project({ projectname, children, link, status, visibleLinks, responsibleHostingMsg }) {
+  function Project({ projectname, children, link, status, visibleLinks, responsibleHostingMsg, onSiteLinks }) {
     let description = children
 
     let statusicon
@@ -44,9 +56,11 @@ export default function Page() {
       <div>{description}</div>
 
       {responsibleHostingMsg && (<div><br></br><span className='warning'>The following links are not hosted by me and I am not responsible for their availability.</span></div>)}
-      {visibleLinks && (<div className={styles.projectLinks}>
-        {visibleLinks.map((x) => (<Link target="_blank" rel="noopener" className={styles.projectLink} href={x}>{x}</Link>))}
-      </div>)}
+
+      <div className={styles.projectLinks}>
+        {visibleLinks && visibleLinks.map((x) => (<Link target="_blank" rel="noopener" className={styles.projectLink} href={x}>{x}</Link>))}
+        {onSiteLinks && onSiteLinks.map((x, key) => <Link className={styles.projectLink} href={x} key={key}>{basePath+x}</Link>)}
+      </div>
     </div>)
   }
 
@@ -136,7 +150,12 @@ export default function Page() {
       projectname="Wildlife Camera"
       status="running"
       link="https://wildtierkamera.privacyy.ch"
-      visibleLinks={["https://wildtierkamera.privacyy.ch"]}
+      onSiteLinks={[
+        "/wildtierkamera",
+      ]}
+      visibleLinks={[
+        "https://wildtierkamera.privacyy.ch",
+      ]}
       >
         <span>Made with a Raspberry Pi, a night-vision camera and a motion sensor. Captured <GrGreen>images are sent to my server over a WLAN network</GrGreen> (using Python) and then displayed on a NextJS website.</span>
       </Project>
