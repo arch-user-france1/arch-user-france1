@@ -58,8 +58,8 @@ export default function Page() {
       {responsibleHostingMsg && (<div><br></br><span className='warning'>The following links are not hosted by me and I am not responsible for their availability.</span></div>)}
 
       <div className={styles.projectLinks}>
-        {visibleLinks && visibleLinks.map((x) => (<Link target="_blank" rel="noopener" className={styles.projectLink} href={x}>{x}</Link>))}
         {onSiteLinks && onSiteLinks.map((x, key) => <Link className={styles.projectLink} href={x} key={key}>{basePath+x}</Link>)}
+        {visibleLinks && visibleLinks.map((x) => (<Link target="_blank" rel="noopener" className={styles.projectLink} href={x}>{x}</Link>))}
       </div>
     </div>)
   }
