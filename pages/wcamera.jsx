@@ -32,6 +32,7 @@ export default function Page() {
                     </p>
 
                     <Image width={1280/2} height={960/2} alt="Wildlife Camera front view" src="/WildlifeCamera.jpg"></Image>
+                    <Image src="https://wildtierkamera.privacyy.ch/images/1684371041.jpg" height={1944/4} width={2592/4}></Image>
                 </div>
             </div>
         </>
