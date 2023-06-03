@@ -133,18 +133,7 @@ export default function Page() {
 
       <CodeBlock command="projects" nomargin />
       <div className={styles.elevation}>
-      <Project
-      projectname="brainTrain" 
-      status="running"
-      link="https://braintrain.privacyy.ch/"
-      visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
-      >
-        <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma ORM, MySQL, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
-      </Project>
 
-      <Project projectname="Discardium" status="collaborating">
-        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet.</span>
-      </Project>
 
       <Project
       projectname="Wildlife Camera"
@@ -159,6 +148,20 @@ export default function Page() {
       >
         <span>Made with a Raspberry Pi, a night-vision camera and a motion sensor. Captured <GrGreen>images are sent to my server over a WLAN network</GrGreen> (using Python) and then displayed on a NextJS website.</span>
       </Project>
+
+      <Project
+      projectname="brainTrain" 
+      status="running"
+      link="https://braintrain.privacyy.ch/"
+      visibleLinks={["https://vercel.privacyy.ch", "https://braintrain.privacyy.ch"]}
+      >
+        <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma ORM, MySQL, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
+      </Project>
+
+      <Project projectname="Discardium" status="collaborating">
+        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet.</span>
+      </Project>
+
 
       <Project
       projectname="Portfolio"
