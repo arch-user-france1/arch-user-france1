@@ -158,10 +158,6 @@ export default function Page() {
         <span>A vocabulary trainer made with <GrWarm>NextJS, Prisma ORM, MySQL, NGINX, and Docker</GrWarm>. I've been working concentrated on it since December 2022.</span>
       </Project>
 
-      <Project projectname="Discardium" status="collaborating">
-        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet.</span>
-      </Project>
-
       <Project
       projectname="Lastcloud"
       status="in development"
@@ -177,6 +173,11 @@ export default function Page() {
           With Lastcloud, I have learned a few things already: Tailwind CSS, NextJS App router, better Database organization, and last but not least the lightning-fast Sharp library that I use to compress images.
         </span>
       </Project>
+
+      <Project projectname="Discardium" status="collaborating">
+        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet. Frankly, not much has happened the last weeks, and I am exhausted. It was a little too complex to do with just two developers, and numerous problems arised. Perhaps we are going to start over, or continue when we've got the strength again.</span>
+      </Project>
+
 
 
       <Project
