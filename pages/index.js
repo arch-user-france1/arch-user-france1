@@ -162,6 +162,22 @@ export default function Page() {
         <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet.</span>
       </Project>
 
+      <Project
+      projectname="Lastcloud"
+      status="in development"
+      >
+        <span>
+          Since Nextcloud pushed a few updates to me, they gradually roll out releases, that quite broke at least one recommended app's functionality, even the files app, 
+          I am occasionally developing Lastcloud with my <GrWarm>preferred stack</GrWarm>. The hardest challenge was to <GrCool>implement file uploads</GrCool>, for which I am using octet streams and no forms. That makes chunking easy for the future, I think.
+          <br></br>
+          I have chosen this name because it's the last cloud anyone is ever going to need, though I came up with the idea while I was texting with someone, and, of course, the name is more of a joke.
+          <br></br>
+          What makes Lastcloud special is that I am trying to make <GrWarm>full use of my ZFS RAID by exposing options such as deduplication and synchronous writes</GrWarm> to the user.
+          <br></br>
+          With Lastcloud, I have learned a few things already: Tailwind CSS, NextJS App router, better Database organization, and last but not least the lightning-fast Sharp library that I use to compress images.
+        </span>
+      </Project>
+
 
       <Project
       projectname="Portfolio"
