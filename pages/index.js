@@ -175,7 +175,7 @@ export default function Page() {
       </Project>
 
       <Project projectname="Discardium" status="collaborating">
-        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet. Frankly, not much has happened the last weeks, and I am exhausted. It was a little too complex to do with just two developers, and numerous problems arised. Perhaps we are going to start over, or continue when we've got the strength again.</span>
+        <span>A real-time <GrMagenta>chat application</GrMagenta> similar to Discord. I am developing it with a friend, and much lies ahead yet. Frankly, not much has happened the last weeks, and I am exhausted. It was a little too complex to do with just two developers, and numerous bugs arised. Perhaps we are going to start over, or continue when we've got the strength again.</span>
       </Project>
 
 
