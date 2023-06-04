@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header } from "./index";
 import Image from "next/image";
 import Head from "next/head";
+import cameraImage from "public/WildlifeCamera.jpg";
 
 export default function Page() {
     return (
@@ -31,7 +32,7 @@ export default function Page() {
                         There's always the matter of the weather, and it would be pleasing if the components live for an acceptable time. Actually, I'm fairly confident our arrangements are sufficient and the SD Card might be the first thing to die. I've got a backup :)
                     </p>
 
-                    <Image width={1280/2} height={960/2} alt="Wildlife Camera front view" src="/WildlifeCamera.jpg"></Image>
+                    <Image width={1280/2} height={960/2} alt="Wildlife Camera front view" src={cameraImage} placeholder="blur"></Image>
                     <Image src="https://wildtierkamera.privacyy.ch/images/1684371041.jpg" height={1944/4} width={2592/4}></Image>
                 </div>
             </div>
