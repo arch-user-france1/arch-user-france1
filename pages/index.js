@@ -108,7 +108,7 @@ export default function Page() {
   // gradients for the descriptions
   const GrCool = ({ children }) => <LinearGradientText gr={["#526af3", "#38a7f1"]}>{children}</LinearGradientText>
   const GrWarm = ({ children }) => <LinearGradientText gr={["#ffbf3c", "#ff687b"]}>{children}</LinearGradientText>
-  const GrGreen = ({ children }) => <LinearGradientText gr={["#41ff00", "#00ffb4"]}>{children}</LinearGradientText>
+  const GrGreen = ({ children }) => <LinearGradientText gr={["#6cd663", "#0ebf87"]}>{children}</LinearGradientText>
   const GrMagenta = ({ children }) => <LinearGradientText gr={["#d022ff", "#ff87ce"]}>{children}</LinearGradientText>
   const GrLight = ({ children }) => <LinearGradientText gr={["#ffd52f", "#effff2"]}>{children}</LinearGradientText>
 
