@@ -134,6 +134,14 @@ export default function Page() {
       <CodeBlock command="projects" nomargin />
       <div className={styles.elevation}>
 
+      <Project
+      projectname="Portfolio-V2"
+      status="in development"
+      link="https://portfolio-v2-pi-ten.vercel.app/"
+      visibleLinks={["https://portfolio-v2-pi-ten.vercel.app/"]}
+      >
+        <span>A new portfolio with an improved design is in progress.</span>
+      </Project>
 
       <Project
       projectname="Wildlife Camera"
