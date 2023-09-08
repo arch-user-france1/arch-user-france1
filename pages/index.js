@@ -171,8 +171,8 @@ export default function Page() {
       status="in development"
       >
         <span>
-          Since Nextcloud pushed a few updates to me, they gradually roll out releases, that quite broke at least one recommended app's functionality, even the files app, 
-          I am occasionally developing Lastcloud with my <GrWarm>preferred stack</GrWarm>. The hardest challenge was to <GrCool>implement file uploads</GrCool>, for which I am using octet streams and no forms. That makes chunking easy for the future, I think.
+          Nextcloud is slow and not stable. That's why I need an alternative.
+          I am occasionally developing Lastcloud with my <GrWarm>preferred stack</GrWarm>. The hardest challenge was to <GrCool>implement file uploads</GrCool>, for which I am using octet streams and no forms.
           <br></br>
           I have chosen this name because it's the last cloud anyone is ever going to need, though I came up with the idea while I was texting with someone, and, of course, the name is more of a joke.
           <br></br>
